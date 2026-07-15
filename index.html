@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="centerContainer">
+      <div id="loading">LOADING</div>
+<div id="popup" class="hidden">
+  <h2>Here's the Information We Collect</h2>
+  <p>This composition operates on speech recognition and is tailored to respond to selected privacy policies on major social media platforms, such as <a href="https://www.facebook.com/privacy/policy/" target="_blank">this one</a>. 
+    <p>To view the script and access the key commands, simply say <span style="color: #ffcc33;">'help'</span>. To view the credits, say <span style="color: #ffcc33;">'cast'</span>. To hide any of the pop-up windows, say <span style="color: #ffcc33;">'close'</span>. You can also say <span style="color: #f8dede;">'fullscreen'</span> and <span style="color: #f8dede;">'exit fullscreen'</span> to control the window mode. 
+    <br>Click <a href="#" id="closePopup">here</a> to close this window and initiate the program.</p>
+</div>
+      <div id="cues"  class="hidden">
+  <h2>Trigger Words</h2>
+  <p>information, products, devices, foreground, identifiers, actions, transactions, create, camera, view, interact, partners, network, address, parties, connections, safety, personalize, circumstances, choose, human, collect, communication, others, profile, data, global, systems, terms, account, good, advertising, limited, health, understand, enjoy, unlawful, property, political, know, logged, clients, migration, law enforcement, legal, search warrant
+    <p><a href="https://static1.squarespace.com/static/5a3773128dd041ba97751f26/t/653d7eb9a926e015fbd53bfc/1698528959058/Heres-the-Information-We-Collect_score-.pdf" target="_blank">[Download full score]</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sample-script.pdf" target="_blank">[Download a sample script]</a>
+       </div>
+
+<div id="cast" class="hidden">
+     <h2>Cast</h2>
+         Soprano: Charlotte Mundy
+          <br>Mezzo-Soprano: Elisa Sutherland 
+          <br>Countertenor: Jonathan May
+          <br>Tenor: Tomás Cruz
+          <br>Baritone: Jeffrey Gavett
+          <br>Bass: Peter Stewart
+          <br>Sound Recording: Kevin Ramsay
+          <p><span style="color: #ffcc33;">A project by <a href="https://tansyxiao.com/" target="_blank" style="color: #ffcc33;">Tansy Xiao</a></span>
+            <br>with the support from 
+            <br><a href="https://www.harvestworks.org/" target="_blank">Harvestworks</a> and <a href="https://websoundart.org/" target="_blank">WebSoundArt</a>
+</div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('closePopup').addEventListener('click', start, function(event) {
+                event.preventDefault();
+                document.getElementById('popup').classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="sketch.js"></script>
+
+  </body>
+</html>
